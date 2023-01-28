@@ -9,17 +9,16 @@ body, html{
     color:#666;
   }
   
-  .pimg1, .pimg2, .pimg3, .pimg4{
+  header {
+    text-align: center;
+  }
+
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
     position:relative;
     opacity:0.90;
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
-  
-    /*
-      fixed = parallax
-      scroll = normal
-    */
+    background-repeat:no-repeat;   
     background-attachment:fixed;
   }
   
@@ -30,17 +29,21 @@ body, html{
   
   .pimg2{
     background-image:url('img/waterview.jpeg');
-    min-height:400px;
+    min-height:500px;
   }
   
   .pimg3{
     background-image:url('/img/wtp.jpeg');
-    min-height:400px;
+    min-height:500px;
   }
 
   .pimg4{
     background-image:url('/img/mahal.jpeg');
-    min-height:400px;
+    min-height:500px;
+  }
+  .pimg5 {
+    background-image:url('/img/rockview.jpeg');
+     min-height:100%;
   }
   
   .section{
@@ -49,7 +52,7 @@ body, html{
   }
   
   .section-light{
-    background-color:#f4f4f4;
+    background-color:#ffffff;
     color:#666;
   }
   
@@ -80,7 +83,7 @@ body, html{
   }
   
   @media(max-width:568px){
-    .pimg1, .pimg2, .pimg3, .pimg4{
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
       background-attachment:scroll;
     }
   }
